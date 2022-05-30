@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xaURQq5MQ1lw5LebOckk0JrBiaJNS9XkiZ40vBmcT4WN/Lq7pqi2BTp/10NfugoMU9HFMZrAjn2+1GX9ABJ6Lw==",
+  "dgSpecHash": "EELudMIYXdjGIi/O+vMONs0eWqnLSfmDpUQPK1aLrdEpzWJ3pMLUx4MHKNH/yq/HvHvbnvsczqsm0cPpI8GY1g==",
   "success": true,
-  "projectFilePath": "C:\\dotnet-rpg\\QuotesApi\\QuotesApi\\QuotesApi.csproj",
+  "projectFilePath": "C:\\quoteapi\\QuoteApi\\QuotesApi\\QuotesApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MerisaMulac\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MerisaMulac\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

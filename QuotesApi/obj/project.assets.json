@@ -6823,11 +6823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dotnet-rpg\\QuotesApi\\QuotesApi\\QuotesApi.csproj",
+      "projectUniqueName": "C:\\quoteapi\\QuoteApi\\QuotesApi\\QuotesApi.csproj",
       "projectName": "QuotesApi",
-      "projectPath": "C:\\dotnet-rpg\\QuotesApi\\QuotesApi\\QuotesApi.csproj",
+      "projectPath": "C:\\quoteapi\\QuoteApi\\QuotesApi\\QuotesApi.csproj",
       "packagesPath": "C:\\Users\\MerisaMulac\\.nuget\\packages\\",
-      "outputPath": "C:\\dotnet-rpg\\QuotesApi\\QuotesApi\\obj\\",
+      "outputPath": "C:\\quoteapi\\QuoteApi\\QuotesApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MerisaMulac\\AppData\\Roaming\\NuGet\\NuGet.Config",
