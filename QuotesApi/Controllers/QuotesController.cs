@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using QuotesApi.Data;
 using QuotesApi.Models;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace QuotesApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class QuotesController : ControllerBase
     {
         private QuotesDbContext _quotesDbContext;
@@ -19,6 +21,7 @@ namespace QuotesApi.Controllers
         }
         // GET: api/<QuotesController>
         [HttpGet]
+        [ResponseCache(Duration = 60, Location =ResponseCacheLocation.Client)]
         public IActionResult Get(string sort) {
             IQueryable<Quote> quotes;
             switch (sort)

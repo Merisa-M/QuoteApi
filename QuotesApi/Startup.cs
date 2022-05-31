@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +31,7 @@ namespace QuotesApi
         {
 
             services.AddMvcCore();
+            services.AddResponseCaching();
             services.AddControllers();
             services.AddDbContext<QuotesDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
@@ -37,6 +39,17 @@ namespace QuotesApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "QuotesApi", Version = "v1" });
             });
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                options.Audience = "https://localhost:44384/";
+                options.Authority = "https://apiquotes1.us.auth0.com/api/v2/";
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,11 +63,12 @@ namespace QuotesApi
             }
 
             app.UseHttpsRedirection();
+            app.UseResponseCaching();
 
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

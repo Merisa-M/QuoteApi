@@ -88,3 +88,4 @@ C:\quoteapi\QuoteApi\QuotesApi\obj\Debug\net5.0\QuotesApi.RazorTargetAssemblyInf
 C:\quoteapi\QuoteApi\QuotesApi\obj\Debug\net5.0\QuotesApi.csproj.CopyComplete
 C:\quoteapi\QuoteApi\QuotesApi\obj\Debug\net5.0\QuotesApi.genruntimeconfig.cache
 C:\quoteapi\QuoteApi\QuotesApi\obj\Debug\net5.0\ref\QuotesApi.dll
+C:\quoteapi\QuoteApi\QuotesApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
